@@ -1,4 +1,6 @@
 #!/bin/bash
+# Read the "record.txt" file
+# Print it out with format
 
 while read name height weight; do
 	printf "Name: ${name}\nHeight: ${height}cm\nWeight: ${weight}kg\n"

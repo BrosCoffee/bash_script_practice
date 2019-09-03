@@ -1,3 +1,5 @@
 Raymond 168 63
 Randy 168 71
 Meliza 162 50
+Sam 172 68
+Mansion 183 65

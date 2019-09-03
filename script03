@@ -1,4 +1,5 @@
 #!/bin/bash
+# Manipulate Strings
 
 rand_str="Hi my name is Raymond."
 echo "Sting length: ${#rand_str}"

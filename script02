@@ -1,4 +1,5 @@
 #!/bin/bash
+# Case conditions
 
 read -p "Please enter your age: " age
 
@@ -18,6 +19,13 @@ case $age in
 	;;
 esac
 
-can_vote=0
-(( age >= 18?(can_vote=1):(can_vote=0) ))
-echo "Can vote: $can_vote."
+case $age in
+1[8,9]|[2-9][0-9])
+	echo "Right to vote: Yes"
+	;;
+*)
+	echo "Right to vote: No" 
+	;;
+esac
+
+
