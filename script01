@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pat=^[1-9]{1}[0-9]{5}$
+read -p "Please enter a number with six digits. " num
+
+if [[ $num =~ $pat ]];then
+	echo "$num is valid."
+else
+	echo "$num is not valid."
+fi
+
+read -p "Please enter two numbers for the sum. " num1 num2
+sum=$(( num1+num2 ))
+echo "$num1 + $num2 = $sum"
+
+read -sp "Please enter the password: " pwd
+if [ $pwd == "Taiwan#1" ]; then
+	echo "Entered the system."
+else
+	echo "Password declined."
+fi

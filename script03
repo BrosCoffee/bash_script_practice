@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rand_str="Hi my name is Raymond."
+echo "Sting length: ${#rand_str}"
+echo "The third word is: ${rand_str:6:4}"
+echo "${rand_str:3}"
+echo "${rand_str#*my name is }"

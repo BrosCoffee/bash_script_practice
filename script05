@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read name height weight; do
+	printf "Name: ${name}\nHeight: ${height}cm\nWeight: ${weight}kg\n"
+	echo
+done < record.txt
